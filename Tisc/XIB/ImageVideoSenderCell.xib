@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageVideoSenderCell" rowHeight="131" id="3Au-wN-m3C" userLabel="ImageVideoSenderCell" customClass="ImageVideoSenderCell" customModule="Tisc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Au-wN-m3C" id="Rfn-Wt-OSi">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="mrR-wN-3bA">
+                        <rect key="frame" x="267" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mrR-wN-3bA" secondAttribute="height" multiplier="1:1" id="NFI-jn-mTa"/>
+                            <constraint firstAttribute="height" constant="45" id="Nji-mq-lsg"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-qw-oni">
+                        <rect key="frame" x="39" y="11" width="220" height="108.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgChat" translatesAutoresizingMaskIntoConstraints="NO" id="X36-CS-2Kp">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="108.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EcZ-oQ-gw0">
+                                <rect key="frame" x="3" y="3" width="214" height="102.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggT-36-yQB">
+                                <rect key="frame" x="85" y="29.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ggT-36-yQB" secondAttribute="height" multiplier="1:1" id="Mcw-yu-kat"/>
+                                    <constraint firstAttribute="width" constant="50" id="Rg8-6Q-1yl"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <state key="selected" image="pause"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X36-CS-2Kp" firstAttribute="top" secondItem="dXp-qw-oni" secondAttribute="top" id="1vf-0u-Cvv"/>
+                            <constraint firstAttribute="trailing" secondItem="EcZ-oQ-gw0" secondAttribute="trailing" constant="3" id="6aV-s4-qLb"/>
+                            <constraint firstAttribute="trailing" secondItem="X36-CS-2Kp" secondAttribute="trailing" id="6k7-ga-0mm"/>
+                            <constraint firstItem="X36-CS-2Kp" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="leading" id="9Dy-tS-aXP"/>
+                            <constraint firstAttribute="bottom" secondItem="X36-CS-2Kp" secondAttribute="bottom" id="BCG-Xi-t1y"/>
+                            <constraint firstItem="ggT-36-yQB" firstAttribute="centerY" secondItem="dXp-qw-oni" secondAttribute="centerY" id="Owz-SC-flY"/>
+                            <constraint firstItem="EcZ-oQ-gw0" firstAttribute="top" secondItem="dXp-qw-oni" secondAttribute="top" constant="3" id="bE4-qK-Y5h"/>
+                            <constraint firstItem="EcZ-oQ-gw0" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="leading" constant="3" id="cHp-Z4-t7s"/>
+                            <constraint firstAttribute="width" constant="220" id="e2p-pY-61m"/>
+                            <constraint firstAttribute="bottom" secondItem="EcZ-oQ-gw0" secondAttribute="bottom" constant="3" id="vbc-ty-Yb7"/>
+                            <constraint firstItem="ggT-36-yQB" firstAttribute="centerX" secondItem="dXp-qw-oni" secondAttribute="centerX" id="xhZ-lh-WEW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTextFld">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mrR-wN-3bA" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="trailing" constant="8" id="RfT-hY-Kkz"/>
+                    <constraint firstAttribute="bottom" secondItem="dXp-qw-oni" secondAttribute="bottom" constant="11" id="W3I-u7-Fdi"/>
+                    <constraint firstItem="dXp-qw-oni" firstAttribute="top" secondItem="mrR-wN-3bA" secondAttribute="top" constant="6" id="WOJ-t5-028"/>
+                    <constraint firstAttribute="trailing" secondItem="mrR-wN-3bA" secondAttribute="trailing" constant="8" id="e4c-R6-gdO"/>
+                    <constraint firstItem="dXp-qw-oni" firstAttribute="top" secondItem="Rfn-Wt-OSi" secondAttribute="top" constant="11" id="q9d-z6-W1B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPlayPause" destination="ggT-36-yQB" id="Mop-5I-BRP"/>
+                <outlet property="imgProfile" destination="mrR-wN-3bA" id="EPM-8j-Ucl"/>
+                <outlet property="imgVw" destination="EcZ-oQ-gw0" id="9zT-7A-8a1"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="64.31784107946028"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bgChat" width="812" height="375"/>
+        <image name="pause" width="30" height="30"/>
+        <image name="play" width="30" height="30"/>
+        <image name="user_profile" width="28.534563064575195" height="28.534563064575195"/>
+    </resources>
+</document>

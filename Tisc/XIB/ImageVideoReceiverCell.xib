@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageVideoReceiverCell" rowHeight="155" id="z5T-ID-HFY" userLabel="ImageVideoReceiverCell" customClass="ImageVideoReceiverCell" customModule="Tisc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z5T-ID-HFY" id="vCy-lF-uCK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-Nj-gz7">
+                        <rect key="frame" x="8" y="6" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="S5l-Nj-gz7" secondAttribute="height" multiplier="1:1" id="YaU-NV-jeu"/>
+                            <constraint firstAttribute="height" constant="45" id="w2r-83-mh6"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-MR-ecZ">
+                        <rect key="frame" x="63" y="11" width="220" height="132.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cND-Sd-ISW">
+                                <rect key="frame" x="3" y="3" width="214" height="126.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsq-Yg-JsA">
+                                <rect key="frame" x="85" y="41.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lsq-Yg-JsA" secondAttribute="height" multiplier="1:1" id="HRg-qm-ORF"/>
+                                    <constraint firstAttribute="width" constant="50" id="T1C-WS-GR2"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <state key="selected" image="pause"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cND-Sd-ISW" firstAttribute="top" secondItem="DB2-MR-ecZ" secondAttribute="top" constant="3" id="33w-lL-kZN"/>
+                            <constraint firstAttribute="trailing" secondItem="cND-Sd-ISW" secondAttribute="trailing" constant="3" id="97i-Av-EOC"/>
+                            <constraint firstItem="lsq-Yg-JsA" firstAttribute="centerX" secondItem="DB2-MR-ecZ" secondAttribute="centerX" id="GKW-QG-x8g"/>
+                            <constraint firstAttribute="bottom" secondItem="cND-Sd-ISW" secondAttribute="bottom" constant="3" id="P7k-Fp-mLo"/>
+                            <constraint firstItem="cND-Sd-ISW" firstAttribute="leading" secondItem="DB2-MR-ecZ" secondAttribute="leading" constant="3" id="jPp-I6-ChD"/>
+                            <constraint firstAttribute="width" constant="220" id="uFj-xa-p2N"/>
+                            <constraint firstItem="lsq-Yg-JsA" firstAttribute="centerY" secondItem="DB2-MR-ecZ" secondAttribute="centerY" id="xWO-id-lGC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DB2-MR-ecZ" firstAttribute="top" secondItem="vCy-lF-uCK" secondAttribute="top" constant="11" id="2hh-yh-Wzt"/>
+                    <constraint firstItem="DB2-MR-ecZ" firstAttribute="leading" secondItem="S5l-Nj-gz7" secondAttribute="trailing" constant="10" id="9Fd-L3-IfX"/>
+                    <constraint firstItem="S5l-Nj-gz7" firstAttribute="leading" secondItem="vCy-lF-uCK" secondAttribute="leading" constant="8" id="D3u-d0-Dkc"/>
+                    <constraint firstItem="S5l-Nj-gz7" firstAttribute="top" secondItem="vCy-lF-uCK" secondAttribute="top" constant="6" id="Eld-th-HcZ"/>
+                    <constraint firstAttribute="bottom" secondItem="DB2-MR-ecZ" secondAttribute="bottom" constant="11" id="aDK-EU-SDb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPlayPause" destination="lsq-Yg-JsA" id="ozv-Cn-gaQ"/>
+                <outlet property="imgProfile" destination="S5l-Nj-gz7" id="AwL-7T-ui9"/>
+                <outlet property="imgVw" destination="cND-Sd-ISW" id="TRd-tL-bs9"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pause" width="30" height="30"/>
+        <image name="play" width="30" height="30"/>
+        <image name="user_profile" width="28.534563064575195" height="28.534563064575195"/>
+    </resources>
+</document>

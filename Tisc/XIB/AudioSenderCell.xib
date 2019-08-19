@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioSenderCell" rowHeight="66" id="3Au-wN-m3C" customClass="AudioSenderCell" customModule="Tisc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Au-wN-m3C" id="Rfn-Wt-OSi">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="mrR-wN-3bA">
+                        <rect key="frame" x="267" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mrR-wN-3bA" secondAttribute="height" multiplier="1:1" id="NFI-jn-mTa"/>
+                            <constraint firstAttribute="height" constant="45" id="Nji-mq-lsg"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-qw-oni">
+                        <rect key="frame" x="79" y="11" width="180" height="43.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgChat" translatesAutoresizingMaskIntoConstraints="NO" id="NmN-Mp-gQx">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-FF-5lM">
+                                <rect key="frame" x="0.0" y="0.0" width="43.5" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1c3-FF-5lM" secondAttribute="height" multiplier="1:1" id="82T-C3-XAr"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <state key="selected" image="pause"/>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="16N-LZ-9GV">
+                                <rect key="frame" x="43.5" y="21" width="126.5" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="3i7-5M-xoX"/>
+                                </constraints>
+                                <color key="progressTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.66666666669999997" alpha="0.70331228595890416" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IZ-ma-Qp5">
+                                <rect key="frame" x="43.5" y="25" width="24" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="16N-LZ-9GV" firstAttribute="leading" secondItem="8IZ-ma-Qp5" secondAttribute="leading" id="6Ye-wg-3rz"/>
+                            <constraint firstAttribute="trailing" secondItem="NmN-Mp-gQx" secondAttribute="trailing" id="Av6-ky-Xdx"/>
+                            <constraint firstItem="1c3-FF-5lM" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="leading" id="I13-d7-iGK"/>
+                            <constraint firstItem="16N-LZ-9GV" firstAttribute="leading" secondItem="1c3-FF-5lM" secondAttribute="trailing" id="ILR-oZ-3e5"/>
+                            <constraint firstItem="16N-LZ-9GV" firstAttribute="centerY" secondItem="dXp-qw-oni" secondAttribute="centerY" id="O09-47-efe"/>
+                            <constraint firstAttribute="bottom" secondItem="NmN-Mp-gQx" secondAttribute="bottom" id="TIb-KT-R6Q"/>
+                            <constraint firstItem="1c3-FF-5lM" firstAttribute="top" secondItem="dXp-qw-oni" secondAttribute="top" id="UDU-5q-CmW"/>
+                            <constraint firstAttribute="width" constant="180" id="e2p-pY-61m"/>
+                            <constraint firstAttribute="trailing" secondItem="16N-LZ-9GV" secondAttribute="trailing" constant="10" id="fZD-6m-kUF"/>
+                            <constraint firstItem="8IZ-ma-Qp5" firstAttribute="top" secondItem="16N-LZ-9GV" secondAttribute="bottom" constant="2" id="i5I-zh-4Lt"/>
+                            <constraint firstItem="NmN-Mp-gQx" firstAttribute="top" secondItem="dXp-qw-oni" secondAttribute="top" id="l8a-1C-wuC"/>
+                            <constraint firstItem="NmN-Mp-gQx" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="leading" id="npB-ey-DF7"/>
+                            <constraint firstAttribute="bottom" secondItem="1c3-FF-5lM" secondAttribute="bottom" id="q75-e4-scN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTextFld">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mrR-wN-3bA" firstAttribute="leading" secondItem="dXp-qw-oni" secondAttribute="trailing" constant="8" id="RfT-hY-Kkz"/>
+                    <constraint firstAttribute="bottom" secondItem="dXp-qw-oni" secondAttribute="bottom" constant="11" id="W3I-u7-Fdi"/>
+                    <constraint firstItem="dXp-qw-oni" firstAttribute="top" secondItem="mrR-wN-3bA" secondAttribute="top" constant="6" id="WOJ-t5-028"/>
+                    <constraint firstAttribute="trailing" secondItem="mrR-wN-3bA" secondAttribute="trailing" constant="8" id="e4c-R6-gdO"/>
+                    <constraint firstItem="dXp-qw-oni" firstAttribute="top" secondItem="Rfn-Wt-OSi" secondAttribute="top" constant="11" id="q9d-z6-W1B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPlayPause" destination="1c3-FF-5lM" id="KrD-da-kh2"/>
+                <outlet property="imgProfile" destination="mrR-wN-3bA" id="2gT-zC-dnC"/>
+                <outlet property="lblTiming" destination="8IZ-ma-Qp5" id="6C2-Jg-zsC"/>
+                <outlet property="progressVw" destination="16N-LZ-9GV" id="UQp-oS-Gza"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="35.082458770614693"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bgChat" width="812" height="375"/>
+        <image name="pause" width="30" height="30"/>
+        <image name="play" width="30" height="30"/>
+        <image name="user_profile" width="28.534563064575195" height="28.534563064575195"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageReceiverCell" rowHeight="66" id="bTX-8p-UdR" customClass="MessageCell" customModule="Tisc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bTX-8p-UdR" id="g9X-oH-PwB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="b1J-lL-c1q">
+                        <rect key="frame" x="8" y="7" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="b1J-lL-c1q" secondAttribute="height" multiplier="1:1" id="SRa-nq-gfH"/>
+                            <constraint firstAttribute="height" constant="45" id="SxI-cI-2VO"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMS-rI-2Cy">
+                        <rect key="frame" x="61" y="11" width="122" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Last message " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6y-us-W7b">
+                                <rect key="frame" x="12" y="12" width="98" height="19.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="A6y-us-W7b" secondAttribute="bottom" constant="12" id="HdN-1L-lso"/>
+                            <constraint firstItem="A6y-us-W7b" firstAttribute="leading" secondItem="UMS-rI-2Cy" secondAttribute="leading" constant="12" id="IPe-Ci-1gS"/>
+                            <constraint firstAttribute="trailing" secondItem="A6y-us-W7b" secondAttribute="trailing" constant="12" id="NJI-8m-UiL"/>
+                            <constraint firstItem="A6y-us-W7b" firstAttribute="top" secondItem="UMS-rI-2Cy" secondAttribute="top" constant="12" id="rPR-hs-8Fh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UMS-rI-2Cy" secondAttribute="trailing" constant="50" id="0vc-SW-s2R"/>
+                    <constraint firstItem="UMS-rI-2Cy" firstAttribute="top" secondItem="b1J-lL-c1q" secondAttribute="top" constant="4" id="67o-KW-jr3"/>
+                    <constraint firstAttribute="bottom" secondItem="UMS-rI-2Cy" secondAttribute="bottom" constant="11" id="Mi3-D2-ye4"/>
+                    <constraint firstItem="b1J-lL-c1q" firstAttribute="leading" secondItem="g9X-oH-PwB" secondAttribute="leading" constant="8" id="TN8-0B-S0I"/>
+                    <constraint firstItem="UMS-rI-2Cy" firstAttribute="leading" secondItem="b1J-lL-c1q" secondAttribute="trailing" constant="8" id="cQ9-mD-U5p"/>
+                    <constraint firstItem="UMS-rI-2Cy" firstAttribute="top" secondItem="g9X-oH-PwB" secondAttribute="top" constant="11" id="oUw-8K-Nyy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgProfile" destination="b1J-lL-c1q" id="bx6-Ta-FDp"/>
+                <outlet property="lblText" destination="A6y-us-W7b" id="WEg-jp-fYe"/>
+                <outlet property="viewContainer" destination="UMS-rI-2Cy" id="3CS-cT-zJv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img1" width="54" height="54"/>
+    </resources>
+</document>
