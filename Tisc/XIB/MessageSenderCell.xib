@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageSenderCell" rowHeight="66" id="tT7-ql-AVF" customClass="MessageCell" customModule="Tisc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tT7-ql-AVF" id="VNO-nx-AcD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-p7-5Jl">
+                        <rect key="frame" x="267" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IaG-p7-5Jl" secondAttribute="height" multiplier="1:1" id="oJD-Gl-bgU"/>
+                            <constraint firstAttribute="height" constant="45" id="pLY-32-xMI"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiP-FA-U9r">
+                        <rect key="frame" x="141.5" y="11" width="117.5" height="43.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgChat" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-5b-RZ9">
+                                <rect key="frame" x="-1" y="-1" width="117" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Last message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-Xi-aVf">
+                                <rect key="frame" x="12" y="12" width="93.5" height="19.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PpX-Xi-aVf" firstAttribute="leading" secondItem="DiP-FA-U9r" secondAttribute="leading" constant="12" id="4m4-8G-W5j"/>
+                            <constraint firstAttribute="trailing" secondItem="PpX-Xi-aVf" secondAttribute="trailing" constant="12" id="NKW-Fq-wNw"/>
+                            <constraint firstAttribute="bottom" secondItem="PpX-Xi-aVf" secondAttribute="bottom" constant="12" id="Vxa-98-3yx"/>
+                            <constraint firstItem="PpX-Xi-aVf" firstAttribute="top" secondItem="DiP-FA-U9r" secondAttribute="top" constant="12" id="f8m-0N-Afj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTextFld">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DiP-FA-U9r" firstAttribute="top" secondItem="VNO-nx-AcD" secondAttribute="top" constant="11" id="HhX-Vj-hmO"/>
+                    <constraint firstItem="IaG-p7-5Jl" firstAttribute="leading" secondItem="DiP-FA-U9r" secondAttribute="trailing" constant="8" id="MPc-kE-DcO"/>
+                    <constraint firstAttribute="bottom" secondItem="DiP-FA-U9r" secondAttribute="bottom" constant="11" id="YJR-Ev-cX7"/>
+                    <constraint firstItem="DiP-FA-U9r" firstAttribute="top" secondItem="IaG-p7-5Jl" secondAttribute="top" constant="6" id="b6z-6C-ec7"/>
+                    <constraint firstAttribute="trailing" secondItem="IaG-p7-5Jl" secondAttribute="trailing" constant="8" id="nUs-cY-Iip"/>
+                    <constraint firstItem="DiP-FA-U9r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VNO-nx-AcD" secondAttribute="leading" constant="50" id="xVb-gd-e13"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgProfile" destination="IaG-p7-5Jl" id="zX5-jS-WKr"/>
+                <outlet property="lblText" destination="PpX-Xi-aVf" id="JRl-S4-PXM"/>
+                <outlet property="viewContainer" destination="DiP-FA-U9r" id="M5k-oG-iBz"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="173"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bgChat" width="812" height="375"/>
+        <image name="user_profile" width="28.534563064575195" height="28.534563064575195"/>
+    </resources>
+</document>
